@@ -1,0 +1,26 @@
+{
+  "type": "Microsoft.Web/sites/config",
+  "apiVersion": "2022-03-01",
+  "name": "backup",
+  "kind": "string",
+  "properties": {
+    "backupName": "string",
+    "backupSchedule": {
+      "frequencyInterval": "int",
+      "frequencyUnit": "string",
+      "keepAtLeastOneBackup": "bool",
+      "retentionPeriodInDays": "int",
+      "startTime": "string"
+    },
+    "databases": [
+      {
+        "connectionString": "string",
+        "connectionStringName": "string",
+        "databaseType": "string",
+        "name": "string"
+      }
+    ],
+    "enabled": "bool",
+    "storageAccountUrl": "string"
+  }
+}

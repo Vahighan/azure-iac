@@ -1,0 +1,39 @@
+{
+    "type": "Microsoft.Sql/servers/databases",
+    "apiVersion": "2022-02-01-preview",
+    "name": "SQL Server and DB",
+    "location": "westeurope",
+    "sku": {
+      "capacity": "int",
+      "family": "string",
+      "name": "string",
+      "size": "string",
+      "tier": "string"
+    },
+    "identity": {
+      "type": "string",
+      "userAssignedIdentities": {}
+    },
+    "properties": {
+      "autoPauseDelay": "int",
+      "catalogCollation": "string",
+      "collation": "string",
+      "createMode": "string",
+      "elasticPoolId": "string",
+      "federatedClientId": "string",
+      "highAvailabilityReplicaCount": "int",
+      "isLedgerOn": "bool",
+      "licenseType": "string",
+      "longTermRetentionBackupResourceId": "string"
+      
+  }
+
+  {
+    "type": "Microsoft.Sql/servers/firewallRules",
+    "apiVersion": "2022-02-01-preview",
+    "name": "string",
+    "properties": {
+      "endIpAddress": "string",
+      "startIpAddress": "string"
+    }
+  }
